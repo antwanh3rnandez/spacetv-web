@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Testimonial from './Testimonial';
-import { TestimonialType } from '../../src/interfaces/Testimoniales.interface';
+import { TestimonialType } from '../../../interfaces/Testimoniales.interface';
 import { useEffect, useState } from 'react';
 
 type TestimonialCarouselProps = {
