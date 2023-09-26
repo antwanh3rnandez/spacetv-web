@@ -4,10 +4,10 @@ import {
 } from "../../components/ui/card"
 
 
-import { Footer } from "../../components/Footer";
+import { Footer } from "../../components/pages/Footer";
 
 import { DataTableExample } from "./DataTableExample"
-import { HeroPages } from "../../components/HeroPages";
+import { HeroPages } from "../../components/pages/HeroPages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
 
 export type Category = {

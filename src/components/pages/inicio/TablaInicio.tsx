@@ -2,11 +2,11 @@ import {
     Avatar,
     AvatarImage,
     AvatarFallback
-} from "../../src/components/ui/avatar";
+} from "../../ui/avatar";
 
-import { Badge } from "../../src/components/ui/badge";
+import { Badge } from "../../ui/badge";
 
-import { Visitante } from "../interfaces/Visitantes.interface"
+import { Visitante } from "../../../interfaces/Visitantes.interface"
 
 const visitantes: Visitante[] = [
     {

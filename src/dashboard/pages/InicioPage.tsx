@@ -25,7 +25,7 @@ import {
 } from '@tabler/icons-react/';
 
 import TestimonialCarousel from '../../components/TestimonialCarousel';
-import { Footer } from '../../components/Footer';
+import { Footer } from '../../components/pages/Footer';
 
 const testimonials = [
   {

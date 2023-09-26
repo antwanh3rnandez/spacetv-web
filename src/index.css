@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Antic+Slab&family=Bungee&family=Playfair+Display:ital@0;1&display=swap');
-
 .hero-text {
   font-family: Amatic SC;
   font-weight: 400;
