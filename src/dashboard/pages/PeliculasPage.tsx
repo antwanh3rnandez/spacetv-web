@@ -27,7 +27,7 @@ export const PeliculasPage = () => {
   const [data, setData] = useState<Category[]>([]);
 
   useEffect(() => {
-    const apiUrl = `http://158.69.225.52/cuenta_api/categorias/movie/`;
+    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/movie/`;
 
     fetch(apiUrl)
       .then((response) => response.json())
