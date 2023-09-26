@@ -24,7 +24,7 @@ import {
   IconBuildingStore, 
 } from '@tabler/icons-react/';
 
-import TestimonialCarousel from '../../components/TestimonialCarousel';
+import TestimonialCarousel from '../../components/pages/inicio/TestimonialCarousel';
 import { Footer } from '../../components/pages/Footer';
 
 const testimonials = [
