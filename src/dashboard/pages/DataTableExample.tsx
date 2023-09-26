@@ -6,7 +6,7 @@ export const DataTableExample = ({ categoria }: { categoria: string }) => {
   const [data, setData] = useState<Movie[]>([]);
 
   useEffect(() => {
-    const apiUrl = `http://158.69.225.52/cuenta_api/peliculas/${categoria}/`;
+    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/peliculas/${categoria}/`;
 
     fetch(apiUrl)
       .then((response) => response.json())
