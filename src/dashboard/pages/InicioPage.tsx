@@ -32,31 +32,31 @@ const testimonials = [
     text: 'Yo ya tengo más de 1 año con ustedes y muy agusto y recomendable servicio.',
     author: 'Miguel Marenc',
     age: 'Suscriptor desde hace 3 años.',
-    pic: '../../src/assets/user.png',
+    pic: '/user.png',
   },
   {
     text: 'Han mejorado sustancialmente en este tiempo que he estado con ustedes, excelente canal!',
     author: 'Jossuet Amir Barrios González',
     age: 'Suscriptor desde hace 3 años.',
-    pic: '../../src/assets/user.png',
+    pic: '/user.png',
   },
   {
     text: 'Esta muy bien tu programación recomenda 10000%',
     author: 'Jfkdj Montevideo',
     age: 'Suscriptor desde hace 2 años.',
-    pic: '../../src/assets/user.png',
+    pic: '/user.png',
   },
   {
     text: 'Exelente servicio.. Y hasta la fecha no eh tenido fallas de ningún tipo.. Gracias por el servicio y fiabilidad',
     author: 'Liliana Sarai',
     age: 'Suscriptor desde hace 1 año.',
-    pic: '../../src/assets/user.png',
+    pic: '/user.png',
   },
   {
     text: 'Excelente!!',
     author: 'Michel Akoury Malacon',
     age: 'Suscriptor desde hace 3 años.',
-    pic: '../../src/assets/user.png',
+    pic: '/user.png',
   },
 ];
 
