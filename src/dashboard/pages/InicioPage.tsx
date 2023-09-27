@@ -81,7 +81,7 @@ export const InicioPage = () => {
   }, [currentIndex]);
 
   return (
-    <div className="hidden flex-col md:flex">
+    <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[590px]">
         <img className="w-full h-full object-cover" src={hero} alt="Hero" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -106,7 +106,7 @@ export const InicioPage = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex-1 space-y-4 sm:px-16 md:px-32 lg:px-64 mt-[-48px]">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-64 mt-[-48px]">
           <div className="grid gap-0 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-xl">
             <Card className='opacity-100 rounded-none'>
               <CardHeader className="items-center">

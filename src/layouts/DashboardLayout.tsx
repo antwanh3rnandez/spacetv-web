@@ -34,9 +34,9 @@ export const DashboardLayout = ({
     ];
     return (
         <>  
-            <div className="hidden flex-col md:flex">
+            <div className="flex-col md:flex">
                 <div className="border-b">
-                    <div className="flex h-28 items-center sm:px-16 md:px-32 lg:px-64">
+                    <div className="flex h-28 items-center px-4 sm:px-16 md:px-32 lg:px-64">
                         <nav className="flex items-center space-x-4 lg:space-x-6">
                             <img className="w-16" src={logo} />
                             {
