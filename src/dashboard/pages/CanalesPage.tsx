@@ -18,13 +18,13 @@ export type CategoryList = {
     data: Category[];
 }
 
-export const PeliculasPage = () => {
+export const CanalesPage = () => {
 
   const [data, setData] = useState<Category[]>([]);
-  const [count, setCount] = useState(4000);
+  const [count, setCount] = useState(300);
 
   useEffect(() => {
-    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/movie/`;
+    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/categorias/live/`;
 
     axios.get(apiUrl)
       .then((response) => {
@@ -41,26 +41,23 @@ export const PeliculasPage = () => {
   return (
     <div className="hidden flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
-        <HeroPages title="Películas"/>
+        <HeroPages title="Canales"/>
         <div className="relative flex-1 space-y-4 sm:px-16 md:px-32 lg:px-64 mt-12">
           <div className='py-12'>
             <h1 className='mb-6 text-5xl text-center font-extralight'>
-              <em>¡Contamos con <b>{count}</b> películas y contando!</em>
+              <em>¡Contamos con <b>{count}</b> canales y contando!</em>
             </h1>
             <h1 className='mb-6 text-3xl text-center font-extralight'>
               <em>
                 Los mejores títulos y estrenos 
               </em>
             </h1>
-            <h1 className='mb-6 text-2xl text-center font-extralight'>
-            ¡Añadimos nuevos títulos TODOS los días!
-            </h1>
             <h1 className='mb-12 text-xl text-center'>
-             <em className='font-extralight'>El contenido puede variar a la fecha de la visualización de esta lista, el contenido de canales puede cambiar sin previo aviso.</em>
+             <em className='font-extralight'>Esta contenido puede variar a la fecha de la visualización de esta lista, el contenido de canales puede cambiar sin previo aviso.</em>
             </h1>
             <div className='mt-16 2xl:px-24'>
               <Card className='shadow-2xl rounded-none border-2 p-6'>
-                <Tabs defaultValue="63" className="w-[100%]">
+                <Tabs defaultValue="46" className="w-[100%]">
                   <TabsList className="mx-8 mt-6 grid gap-2 md:grid-cols-2 xl:grid-cols-4 h-[100%] p-3 shadow-lg">
                     {
                       categories.map((categoria, index) => (
@@ -80,7 +77,7 @@ export const PeliculasPage = () => {
                           value={categoria.id}
                           key={index}
                         >
-                          <DataTableExample type="peliculas" categoria={categoria.id}/>
+                          <DataTableExample type="canales" categoria={categoria.id}/>
                         </TabsContent>
                       ))
                     }

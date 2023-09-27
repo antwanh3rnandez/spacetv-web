@@ -16,16 +16,20 @@ export const DashboardLayout = ({
             name: 'inicio'
         },
         {
+            path: '/canales',
+            name: 'Canales'
+        },
+        {
             path: '/peliculas',
             name: 'Peliculas'
         },
         {
-            path: '/visitantes',
-            name: '¿Como lo instalo?'
+            path: '/series',
+            name: 'Series'
         },
         {
-            path: '/prospectos',
-            name: 'Canales'
+            path: '/visitantes',
+            name: '¿Como lo instalo?'
         },
     ];
     return (

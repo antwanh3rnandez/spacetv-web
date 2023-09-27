@@ -9,7 +9,7 @@ export const Footer = () => {
         <>
         <div className="mt-12 px-8 h-36 bg-slate-300">
           <div className="w-full h-full flex flex-col xl:flex-row space-y-4 xl:space-x-16 items-center justify-center">
-            <h2 className="text-5xl text-center font-extralight">
+            <h2 className="text-3xl xl:text-5xl text-center font-extralight">
               <em className='font-semibold'>Únete a la familia! </em>
               <em>Adquiere nuestro servicio.</em>
             </h2>
