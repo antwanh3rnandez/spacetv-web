@@ -220,7 +220,7 @@ export const InicioPage = () => {
             </div>
           </div>
           <div className='py-12'>
-            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-24'>
+            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-20'>
               <Card className='w-100 xl:w-[110%] xl:p-24 flex flex-col shadow-2xl'>
                 <CardHeader>
                   <CardTitle className='text-left text-xl text-muted-foreground'>
@@ -244,13 +244,15 @@ export const InicioPage = () => {
                     <div className='mt-6 flex items-center justify-center'>
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a href='https://wa.me/+5218125949904' target='_blank'>
-                        <Button className='rounded-none bg-green-500'>
-                            <IconBrandWhatsapp /> &nbsp; WhatsApp
+                          <Button className='rounded-none bg-green-500'>
+                            <IconBrandWhatsapp /> &nbsp; 
+                            <div>WhatsApp</div>
                           </Button>
                         </a>
                         <a href='https://t.me/SpaceTVPlus' target='_blank'>
                           <Button className='rounded-none bg-sky-600'>
-                            <IconBrandTelegram /> &nbsp; Telegram
+                            <IconBrandTelegram /> &nbsp; 
+                            <div>Telegram</div>
                           </Button>
                         </a>
                       </div>
@@ -294,7 +296,7 @@ export const InicioPage = () => {
                       1 MES
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -331,12 +333,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=159296684-6726849e-3c84-4556-96a2-2c10eae76a9a'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F2NJZNSLPM2JL' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
@@ -359,7 +363,7 @@ export const InicioPage = () => {
                       1 SEMESTRE
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -396,12 +400,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://www.mercadopago.com.mx/checkout/v1/redirect?preference-id=159296684-912ba9b4-0618-4ee2-963b-e102520df4d4'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W28WB83MX8CYA' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
@@ -424,7 +430,7 @@ export const InicioPage = () => {
                       1 ANUALIDAD
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -461,12 +467,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://www.mercadopago.com.mx/checkout/v1/redirect?preference-id=159296684-01e5f6be-5ea6-4834-812c-4cb7f8c9ee16'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VGZU46RDPGDDS' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
@@ -489,7 +497,7 @@ export const InicioPage = () => {
                       2 MESES
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -526,12 +534,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://mpago.la/2QfqUeW'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PD7MGAZUWBE8Q' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
@@ -554,7 +564,7 @@ export const InicioPage = () => {
                       2 SEMESTRES
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -591,12 +601,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://mpago.la/2Xig99A'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=STE8ZZ6FL4XMU' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
@@ -619,7 +631,7 @@ export const InicioPage = () => {
                       2 ANUALIDADES
                       </div>
                     </div>
-                    <div className='grid gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                    <div className='grid gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
                       <div className='flex flex-col items-center justify-center'>
                         <div className='text-center'>
                           <h1 className='text-2xl'>
@@ -656,12 +668,14 @@ export const InicioPage = () => {
                       <div className='flex items-center space-x-4 lg:space-x-6'>
                         <a target='_blank' href='https://mpago.la/1Pm9Efj'>
                           <Button className='bg-green-500'>
-                            <IconCreditCard /> &nbsp; Comprar
+                            <IconCreditCard /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAWA9M66EW2ZE' target='_blank'>
                           <Button className='bg-blueprimary'>
-                            <IconBrandPaypal /> &nbsp; Comprar
+                            <IconBrandPaypal /> &nbsp; 
+                            <div>Comprar</div>
                           </Button>
                         </a>
                       </div>
