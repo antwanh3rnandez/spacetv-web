@@ -780,7 +780,7 @@ export const InicioPage = () => {
             <div className="w-[25%] h-24 bg-blueprimary" style={{ clipPath: 'polygon(100% 100%, 0% 100%, 100% 0%)' }}>
             </div>
         </div>
-        <div className="relative flex-1 space-y-4 sm:px-16 md:px-32 xl:px-64 mt-12">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 xl:px-64 mt-12">
           <div className='py-12'>
             <h1 className='mb-6 text-5xl text-center font-extralight'>
               <em>Testimoniales</em>
