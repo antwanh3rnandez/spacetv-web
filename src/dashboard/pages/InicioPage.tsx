@@ -203,7 +203,7 @@ export const InicioPage = () => {
           </div>
           <div className='py-12'>
             <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-24'>
-              <Card className='xl:w-[110%] p-24 flex flex-col shadow-2xl'>
+              <Card className='w-100 xl:w-[110%] xl:p-24 flex flex-col shadow-2xl'>
                 <CardHeader>
                   <CardTitle className='text-left text-xl text-muted-foreground'>
                   Acerca de
