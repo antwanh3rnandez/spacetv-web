@@ -48,7 +48,9 @@ export const DashboardLayout = ({
       <div className="border-b">
         <div className={`flex ${isMobileMenuOpen ? 'border-b-2' : ''} h-28 items-center px-4 sm:px-16 md:px-32 lg:px-64`}>
           <nav className="flex items-center space-x-4 lg:space-x-6">
-            <img className="w-16" src={logo} alt="Logo" />
+            <a href="/">
+                <img className="w-16" src={logo} alt="Logo" />
+            </a>
             <button
               className="lg:hidden"
               onClick={toggleMobileMenu}
