@@ -23,7 +23,7 @@ import {
   IconBrandCashapp, 
   IconBuildingStore, 
 } from '@tabler/icons-react/';
-
+import axios from "axios"; 
 import TestimonialCarousel from '../../components/pages/inicio/TestimonialCarousel';
 import { Footer } from '../../components/pages/Footer';
 
@@ -65,6 +65,24 @@ export const InicioPage = () => {
   const palabras = ["FireTV", "SmartTV", "Windows", "Roku", "AndroidTV", "Mac", "iPhone", "iPad"];
   const [palabraActual, setPalabraActual] = useState("Dispositivo");
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [countChannels, setCountChannels] = useState(0);
+  const [countMovies, setCountMovies] = useState(0);
+  const [countSeries, setCountSeries] = useState(0);
+
+  useEffect(() => {
+    const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/contenido/null/`;
+
+    axios.get(apiUrl)
+      .then((response) => {
+        setCountChannels(response.data.data.channels);
+        setCountMovies(response.data.data.movies);
+        setCountSeries(response.data.data.episodes);
+      })
+      .catch((error) => {
+        console.error("Error al obtener datos:", error);
+      });
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -134,7 +152,7 @@ export const InicioPage = () => {
                   CANALES EN VIVO
                 </div>
                 <p className="text-lg text-muted-foreground text-center">
-                  Más de 600 canales en vivo de diversas categorías y países con PPE incluido.
+                  Más de {countChannels} canales en vivo de diversas categorías y países con PPE incluido.
                 </p>
               </CardContent>
             </Card>
@@ -149,7 +167,7 @@ export const InicioPage = () => {
                   PELÍCULAS
                 </div>
                 <p className="text-lg text-muted-foreground text-center">
-                  Más de 4,700 películas de estreno y títulos clásicos del cine para todas las edades.
+                  Más de {countMovies} películas de estreno y títulos clásicos del cine para todas las edades.
                 </p>
               </CardContent>
             </Card>
@@ -164,7 +182,7 @@ export const InicioPage = () => {
                   SERIES DE TV
                 </div>
                 <p className="text-lg text-muted-foreground text-center">
-                  Series actualizadas constantemente trayendo los mejores y más nuevos títulos.
+                Más de {countSeries} episodios, trayendo los mejores y más nuevos títulos.
                 </p>
               </CardContent>
             </Card>
