@@ -39,7 +39,8 @@ export const columnsMovies: ColumnDef<Item>[] = [
         accessorKey: "cover",
         header: "Cover",
         cell: ({ row }) => {
-            const coverUrl = row.original.cover;
+            let coverUrl = row.original.cover;
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
     
             return (
                 <div>
@@ -73,12 +74,14 @@ export const columnsCanales: ColumnDef<Item>[] = [
         accessorKey: "cover",
         header: "Cover",
         cell: ({ row }) => {
-            const coverUrl = row.original.cover;
-    
+            let coverUrl = row.original.cover;
+            coverUrl = coverUrl?.replace(/"/g, '')
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
+            
             return (
                 <div>
                     {coverUrl ?
-                    <img src={ coverUrl?.replace(/"/g, '')} alt="Cover" className="w-12 h-18" />
+                    <img src={ coverUrl } alt="Cover" className="w-12 h-18" />
                     :
                     <div className="w-12 flex flex-row items-center justify-center">
                         <IconPhotoOff />
@@ -126,8 +129,9 @@ export const columnsSeries: ColumnDef<Item>[] = [
         accessorKey: "cover",
         header: "Cover",
         cell: ({ row }) => {
-            const coverUrl = row.original.cover;
-    
+            let coverUrl = row.original.cover;
+            coverUrl = coverUrl?.replace(/http:\/\/158\.69\.225\.52:25461/g, 'https://spacetv-api2.axol.dev');
+
             return (
                 <div>
                     <img src={coverUrl} alt="Cover" className="w-12 h-18" />
