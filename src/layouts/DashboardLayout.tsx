@@ -39,6 +39,10 @@ export const DashboardLayout = ({
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       <div className="border-b">
@@ -81,6 +85,7 @@ export const DashboardLayout = ({
                 to={option.path}
                 className="block text-lg font-medium text-primary capitalize transition-colors hover:text-muted-foreground"
                 key={index}
+                onClick={closeMobileMenu}
                 >
                     {option.name}
                 </NavLink>
