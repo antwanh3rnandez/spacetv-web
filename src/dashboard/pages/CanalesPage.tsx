@@ -56,7 +56,7 @@ export const CanalesPage = () => {
              <em className='font-extralight'>Esta contenido puede variar a la fecha de la visualización de esta lista, el contenido de canales puede cambiar sin previo aviso.</em>
             </h1>
             <div className='mt-16 2xl:px-24'>
-              <Card className='shadow-2xl rounded-none border-2 p-6'>
+              <Card className='shadow-2xl rounded-none border-2 xl:p-6'>
                 <Tabs defaultValue="46" className="w-[100%]">
                   <TabsList className="mx-8 mt-6 grid gap-2 md:grid-cols-2 xl:grid-cols-4 h-[100%] p-3 shadow-lg">
                     {

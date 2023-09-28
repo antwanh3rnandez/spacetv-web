@@ -120,7 +120,7 @@ export const columnsSeries: ColumnDef<Item>[] = [
     
             return (
                 <div>
-                    <h1 className="w-full">{temporadas?.replace(/\[|\]/g, '')}</h1>
+                    <h1 className="w-full">{temporadas?.replace(/\[0, |\]|\[/g, '')}</h1>
                 </div>
             );
         },
