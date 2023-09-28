@@ -51,14 +51,6 @@ export const DashboardLayout = ({
             <a href="/">
                 <img className="w-16" src={logo} alt="Logo" />
             </a>
-            <button
-              className="lg:hidden"
-              onClick={toggleMobileMenu}
-            >
-              <Card className="p-1">
-                <IconMenu2 size={28} />
-              </Card>
-            </button>
             {/* Menú Normal */}
             <div className="hidden lg:flex space-x-4">
               {menuOptions.map((option, index) => (
@@ -77,29 +69,47 @@ export const DashboardLayout = ({
           <div className="ml-auto flex items-center space-x-4">
             <ModeToggle />
           </div>
+          <div className="lg:hidden ml-auto flex items-center space-x-4">
+            <button
+              className="lg:hidden"
+              onClick={toggleMobileMenu}
+            >
+              <Card className="p-1">
+                <IconMenu2 size={28} />
+              </Card>
+            </button>
+          </div>
         </div>
         {/* Menú Responsive */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden px-4 py-2">
-            {menuOptions.map((option, index) => (
-              <div className="flex flex-col items-center justify-center">
-                <NavLink
-                to={option.path}
-                className="block text-lg font-medium text-primary capitalize transition-colors hover:text-muted-foreground"
-                key={index}
-                onClick={closeMobileMenu}
-                >
-                    {option.name}
-                </NavLink>
-                {index < menuOptions.length - 1 && (
-                    <hr className="border-[1px] w-[1000%] border-primary-foreground"></hr>
-                )}
-              </div>
-            ))}
+          <div className="fixed lg:hidden top-0 right-0 h-full w-80 bg-gray-600 z-50 shadow-lg">
+            <div className="py-2 space-y-2 border-b-2 border-primary-foreground">
+                <div className="flex flex-col items-center py-4">
+                    <a href="/">
+                        <img className="w-16" src={logo} alt="Logo" />
+                    </a>
+                </div>
+                {menuOptions.map((option, index) => (
+                    <div key={index}>
+                    <NavLink
+                        to={option.path}
+                        className="block pl-6 text-md text-black dark:text-white font-normal text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
+                        onClick={closeMobileMenu}
+                    >
+                        {option.name}
+                    </NavLink>
+                    {index < menuOptions.length - 1 && (
+                        <hr className="border-[1px] w-[100%] border-primary-foreground my-2"></hr>
+                    )}
+                    </div>
+                ))}
+            </div>
           </div>
         )}
       </div>
-      <main className="">{children}</main>
+      <main className="" onClick={closeMobileMenu}>
+        {children}
+      </main>
     </>
   );
 };
