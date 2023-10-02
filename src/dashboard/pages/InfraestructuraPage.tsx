@@ -7,7 +7,13 @@ import logo from "../../assets/spacetv-logo.png"
 import screen from "../../assets/screen.jpg"
 import { Button } from "../../components/ui/button";
 
-const FeatureItem = ({ icon, title, description }) => (
+interface FeatureItemProps {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+}
+
+const FeatureItem = ({ icon, title, description }: FeatureItemProps) => (
     <div className="lg:flex justify-center items-center lg:items-start p-4">
       <div className="flex-shrink-0 lg:mr-4 flex flex-col items-center">
         {icon}
@@ -17,7 +23,7 @@ const FeatureItem = ({ icon, title, description }) => (
         <p className="">{description}</p>
       </div>
     </div>
-  );
+);
 
 export const InfraestructuraPage = () => {
 
