@@ -209,7 +209,14 @@ export const InicioPage = () => {
                       <div className='flex flex-row items-center space-x-4 lg:space-x-6'>
                           <a href='https://www.facebook.com/WanherTV/' target='_blank'>
                             <Button className='rounded-none bg-red-600'>
-                              <IconBrandFacebook /> &nbsp; Nueva Pagina de Facebook
+                              <IconBrandFacebook /> &nbsp; 
+                              <div>Nueva Pagina de Facebook</div>
+                            </Button>
+                          </a>
+                          <a href='https://wa.me/+5218125949904' target='_blank'>
+                            <Button className='rounded-none bg-red-600'>
+                              <IconBrandWhatsapp /> &nbsp; 
+                              <div>WhatsApp</div>
                             </Button>
                           </a>
                       </div>

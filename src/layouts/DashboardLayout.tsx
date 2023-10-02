@@ -18,6 +18,10 @@ export const DashboardLayout = ({
       name: "inicio",
     },
     {
+      path: "/visitantes",
+      name: "¿Cómo lo instalo?",
+    },
+    {
       path: "/canales",
       name: "Canales",
     },
@@ -30,9 +34,9 @@ export const DashboardLayout = ({
       name: "Series",
     },
     {
-      path: "/visitantes",
-      name: "¿Cómo lo instalo?",
-    },
+        path: "/infraestructura",
+        name: "¿Quiere tener su Propio Servicio IPTV?",
+      },
   ];
 
   const toggleMobileMenu = () => {

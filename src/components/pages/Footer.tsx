@@ -30,13 +30,17 @@ export const Footer = () => {
           </div>
         </div>
         <div className='flex flex-row h-36 shadow-2xl'>
-          <div className='w-[50%] bg-blueprimary flex flex-row items-center justify-center space-x-4 p-8'>
-            <p className='md:text-xl xl:text-4xl font-normal text-white text-center'>NUEVA PÁGINA DE FACEBOOK</p>
-            <IconBrandFacebook size={64} className='text-white'/>
+          <div className='w-[50%] bg-blueprimary flex flex-row items-center justify-center'>
+            <a href="https://www.facebook.com/WanherTV/" target="_blank" className="flex flex-row items-center justify-center space-x-4 p-8">
+              <p className='md:text-xl xl:text-4xl font-normal text-white text-center'>NUEVA PÁGINA DE FACEBOOK</p>
+              <IconBrandFacebook size={64} className='text-white'/>
+            </a>
           </div>
-          <div className='w-[50%] bg-orange-500 flex flex-row items-center justify-center space-x-4 p-8'>
+          <div className='w-[50%] bg-orange-500 flex flex-row items-center justify-center'>
+            <a href="https://t.me/+QhtIUmZElIMr36Jj" target="_blank" className="flex flex-row items-center justify-center space-x-4 p-8">
             <IconBrandTelegram size={64} className='text-white'/>
-            <p className='md:text-xl xl:text-4xl font-normal text-white text-center'>ÚNETE A NUESTRO TELEGRAM</p>
+              <p className='md:text-xl xl:text-4xl font-normal text-white text-center'>ÚNETE A NUESTRO TELEGRAM</p>
+            </a>
           </div>
         </div>
         <div className='w-full h-24 flex flex-col items-center justify-center'>
