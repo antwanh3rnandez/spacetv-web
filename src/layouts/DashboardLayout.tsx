@@ -16,27 +16,38 @@ export const DashboardLayout = ({
     {
       path: "/",
       name: "inicio",
+      dropdown: false,
     },
     {
       path: "/visitantes",
       name: "¿Cómo lo instalo?",
+      dropdown: true,
     },
     {
       path: "/canales",
       name: "Canales",
+      dropdown: false,
     },
     {
       path: "/peliculas",
       name: "Peliculas",
+      dropdown: false,
     },
     {
       path: "/series",
       name: "Series",
+      dropdown: false,
     },
     {
-        path: "/infraestructura",
-        name: "¿Quiere tener su Propio Servicio IPTV?",
-      },
+      path: "/infraestructura",
+      name: "¿Quiere tener su Propio Servicio IPTV?",
+      dropdown: false,
+    },
+    {
+      path: "/canales-restream",
+      name: "Canales Re-Stream",
+      dropdown: false,
+    },
   ];
 
   const toggleMobileMenu = () => {

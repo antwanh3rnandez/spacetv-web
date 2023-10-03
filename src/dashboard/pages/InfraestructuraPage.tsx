@@ -166,14 +166,18 @@ export const InfraestructuraPage = () => {
                                             <IconCheck className="text-blueprimary"/>
                                             <div className="text-lg font-extralight mb-4">App Android con sus propios logos</div>
                                         </li>
+                                        <li className="flex flex-row items-start justify-start space-x-2">
+                                            <IconCheck className="text-blueprimary"/>
+                                            <div className="text-lg font-extralight mb-4">Soporte 24/7</div>
+                                        </li>
                                     </ul>
                                     <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
                                         <span className="text-4xl font-semilight">$</span>
-                                        <span className="text-7xl font-semilight">600</span>
+                                        <span className="text-7xl font-semilight">12,000</span>
                                         <span className="text-3xl font-light ">/ mes</span>
                                     </div>
                                     <h1 className='my-6 text-xl text-center'>
-                                        <em className='font-extralight'>*Precios marcados en Dolares Estadounidenses</em>
+                                        <em className='font-extralight'>*Precios marcados en Pesos Mexicanos</em>
                                     </h1>
                                 </div>
                                 <a
@@ -199,7 +203,7 @@ export const InfraestructuraPage = () => {
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
                                         <IconCheck className="text-blueprimary"/>
-                                        <div className="text-lg font-extralight mb-4">50 Canales a Elegir</div>
+                                        <div className="text-lg font-extralight mb-4">80 Canales a Elegir</div>
                                     </li>
                                     <li className="flex flex-row items-start justify-start space-x-2">
                                         <IconCheck className="text-blueprimary"/>
@@ -209,14 +213,18 @@ export const InfraestructuraPage = () => {
                                         <IconCheck className="text-blueprimary"/>
                                         <div className="text-lg font-extralight mb-4">Soporte 24/7</div>
                                     </li>
+                                    <li className="flex flex-row items-start justify-start space-x-2">
+                                        <IconCheck className="text-blueprimary"/>
+                                        <div className="text-lg font-extralight mb-4"><b>500 Películas de regalo al contratar</b></div>
+                                    </li>
                                 </ul>
                                 <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
                                     <span className="text-4xl font-semilight">$</span>
-                                    <span className="text-7xl font-semilight">600</span>
+                                    <span className="text-7xl font-semilight">15,000</span>
                                     <span className="text-3xl font-light ">/ mes</span>
                                 </div>
                                 <h1 className='my-6 text-xl text-center'>
-                                    <em className='font-extralight'>*Precios marcados en Dolares Estadounidenses</em>
+                                    <em className='font-extralight'>*Precios marcados en Pesos Mexicanos</em>
                                 </h1>
                             </div>
                             <a

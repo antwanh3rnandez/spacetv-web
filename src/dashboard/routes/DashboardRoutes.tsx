@@ -6,6 +6,7 @@ import { PeliculasPage } from "../pages/PeliculasPage";
 import { SeriesPage } from "../pages/SeriesPage"; 
 import { InfraestructuraPage } from "../pages/InfraestructuraPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
+import { CanalesRestreamPage } from "../pages/CanalesRestreamPage";
 
 export const DashboardRoutes = () => {
   return (
@@ -16,6 +17,7 @@ export const DashboardRoutes = () => {
         <Route path="/peliculas" element={<PeliculasPage/>} />
         <Route path="/series" element={<SeriesPage/>} />
         <Route path="/infraestructura" element={<InfraestructuraPage/>} />
+        <Route path="/canales-restream" element={<CanalesRestreamPage/>} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </DashboardLayout>
