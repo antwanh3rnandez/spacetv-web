@@ -44,8 +44,14 @@ export const columnsMovies: ColumnDef<Item>[] = [
     
             return (
                 <div>
-                    <img src={coverUrl?.replace(/"/g, '')} alt="Cover" className="w-12 h-18" />
+                {coverUrl ?
+                    <img src={ coverUrl?.replace(/"/g, '') } alt="Cover" className="w-12 h-18" />
+                :
+                <div className="w-12 flex flex-row items-center justify-center">
+                    <IconPhotoOff />
                 </div>
+                }
+            </div>
             );
         },
     },    
@@ -134,7 +140,13 @@ export const columnsSeries: ColumnDef<Item>[] = [
 
             return (
                 <div>
-                    <img src={coverUrl} alt="Cover" className="w-12 h-18" />
+                    {coverUrl ?
+                        <img src={ coverUrl } alt="Cover" className="w-12 h-18" />
+                    :
+                    <div className="w-12 flex flex-row items-center justify-center">
+                        <IconPhotoOff />
+                    </div>
+                    }
                 </div>
             );
         },
