@@ -1,13 +1,6 @@
 import { Card } from "../../components/ui/card"
 import { Footer } from "../../components/pages/Footer";
 import { HeroPages } from "../../components/pages/HeroPages";
-import { Button } from "../../components/ui/button";
-
-interface FeatureItemProps {
-    icon: React.ReactNode;
-    title: string;
-    description: string;
-}
 
 export const CanalesRestreamPage = () => {
 
