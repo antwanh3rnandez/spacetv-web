@@ -286,7 +286,7 @@ export const InfraestructuraPage = () => {
                             Información y costos en:
                         </h1>
                         <div className="flex flex-row justify-center lg:justify-start">
-                            <a href="">
+                            <a href="/canales-restream">
                                 <Button className="rounded-none bg-blueprimary">
                                     CANALES RE-STREAM O APP ANDROID
                                 </Button>
