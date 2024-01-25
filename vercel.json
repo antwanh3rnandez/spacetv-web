@@ -1,4 +1,12 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    "rewrites": [
+        { 
+            "source": "/(.*)", "destination": "/index.html" 
+        },
+        {
+            "source": "/images/:path*", 
+            "destination": "http://158.69.225.52:25461/images/:path*"
+        }
+    ] 
 }
   
