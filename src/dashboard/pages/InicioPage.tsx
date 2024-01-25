@@ -26,6 +26,7 @@ import {
 import axios from "axios"; 
 import TestimonialCarousel from '../../components/pages/inicio/TestimonialCarousel';
 import { Footer } from '../../components/pages/Footer';
+import { CustomSplide } from '../../components/pages/inicio/CustomSplide';
 
 const testimonials = [
   {
@@ -62,6 +63,9 @@ const testimonials = [
 
 export const InicioPage = () => {
 
+  //const { imagesMovies } = useImageImports();
+  //console.log(imagesMovies);
+
   const palabras = ["FireTV", "SmartTV", "Windows", "Roku", "AndroidTV", "Mac", "iPhone", "iPad"];
   const [palabraActual, setPalabraActual] = useState("Dispositivo");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,6 +73,8 @@ export const InicioPage = () => {
   const [countChannels, setCountChannels] = useState(0);
   const [countMovies, setCountMovies] = useState(0);
   const [countSeries, setCountSeries] = useState(0);
+
+  const [imagesMovies, setImagesMovies] = useState([]);
 
   useEffect(() => {
     const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/contenido/null/`;
@@ -83,6 +89,20 @@ export const InicioPage = () => {
         console.error("Error al obtener datos:", error);
       });
   }, []);
+
+  useEffect(() => {
+    const apiUrlImages = `http://158.69.225.52:25461/updates_img.php`;
+    const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
+
+    axios.get(corsAnywhereUrl + apiUrlImages)
+      .then((response) => {
+        setImagesMovies(response.data);
+        console.log(imagesMovies);
+      })
+      .catch((error) => {
+        console.error("Error al obtener datos:", error);
+      });
+}, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -124,7 +144,7 @@ export const InicioPage = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-64 mt-[-48px]">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-48 mt-[-48px] mb-12">
           <div className="grid gap-0 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-xl">
             <Card className='opacity-100 rounded-none'>
               <CardHeader className="items-center">
@@ -187,13 +207,24 @@ export const InicioPage = () => {
               </CardContent>
             </Card>
           </div>
-          <div className='py-12'>
+        </div>
+        <div className='py-12'>
+          <h1 className='mb-6 text-5xl text-center font-extralight'>
+            <em>Disfruta de los mejores estrenos</em>
+          </h1>
+          <h1 className='mb-6 text-2xl text-center font-extralight'>
+            Contamos con los últimos estrenos de cine así como los mejores titulos
+          </h1>
+          <CustomSplide id="splideMovies" perPage={8} extraClass={`shadow-xl`} images={imagesMovies} />
+        </div>
+        <div className="space-y-4 px-6 sm:px-16 md:px-32 lg:px-48 mt-[-48px]">
+          {/* <div className='py-12'>
             <h1 className='text-6xl text-center' style={{fontFamily: 'Playfair Display'}}>
               <em style={{fontStyle: 'italic', color: 'rgb(244, 13, 3)'}}>SpaceTV+ </em>
               <em>solicita de su </em>
               <em style={{fontStyle: 'italic', color: 'rgb(244, 13, 3)'}}>ayuda.</em>
             </h1>
-            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:mx-32 shadow-xl'>
+            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:mx-24 shadow-xl'>
               <Card className='flex flex-col items-center text-center'>
                 <CardHeader>
                   <CardTitle>
@@ -225,9 +256,9 @@ export const InicioPage = () => {
                 </CardContent>
               </Card>
             </div>
-          </div>
+          </div> */}
           <div className='py-12'>
-            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-20'>
+            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-12'>
               <Card className='w-100 xl:w-[110%] xl:p-24 flex flex-col shadow-2xl'>
                 <CardHeader>
                   <CardTitle className='text-left text-xl text-muted-foreground'>
