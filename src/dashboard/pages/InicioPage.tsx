@@ -14,7 +14,6 @@ import {
   IconDeviceTv, 
   IconMovie, 
   IconUsersGroup, 
-  IconBrandFacebook, 
   IconBrandWhatsapp, 
   IconBrandTelegram, 
   IconCurrencyDollar, 
