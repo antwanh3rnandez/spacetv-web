@@ -25,7 +25,7 @@ interface CustomSplideProps {
       >
         {images.map((image, index) => (
           <SplideSlide key={index} id={`${id}-slide${index}`}>
-            <img src={`${image.url.slice(1)}`} alt={`Image ${index + 1}`} />
+            <img src={`http://158.69.225.52:25461${image.url.slice(1)}`} alt={`Image ${index + 1}`} />
           </SplideSlide>
         ))}
       </Splide>
