@@ -31,7 +31,7 @@ export const InfraestructuraPage = () => {
     <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
         <HeroPages title="¿Quiere tener su propio servicio IPTV?"/>
-        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-64 mt-12">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
             <div className="2xl:px-32">
                 <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
@@ -79,11 +79,11 @@ export const InfraestructuraPage = () => {
                     <em className='font-extralight'>En el mundo del IPTV todo servicio o elemento que se requiera para el mismo se paga de manera mensual. No existe infraestructura IPTV la cual se realice a un solo pago ya que se requieren elementos que necesitan estar monitoreados 24/7.</em>
                 </h1>
             </div>
-            <div className="2xl:px-32">
+            <div className="mt-24 2xl:px-32">
                 <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
                     <em>Proceso de funcionamiento de Infraestructura IPTV</em>
                 </h1>
-                <Card className="shadow-xl p-8">
+                <Card className="shadow-xl p-8" style={{fontFamily: "Poppins"}}>
                     <div className="grid lg:grid-cols-3 items-start justify-center">
                         <div className="flex flex-col items-center justify-center">
                             <div className="border-2 border-blueprimary w-24 h-24 rounded-full flex flex-col items-center justify-center">
@@ -91,7 +91,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 1</h4>
-                                <p className="">Servidor dedicado donde se subirá específicamente películas y series.</p>
+                                <p className="font-light p-4">Servidor dedicado donde se subirá específicamente películas y series.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
@@ -100,7 +100,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 2</h4>
-                                <p className="">El software INSTALADO en el Servidor Dedicado encargado de todas las tareas administrativas, contenido y monitorear los recursos del servicio, desde donde IMPORTAREMOS las películas, series y canales del proceso siguiente.</p>
+                                <p className="font-light p-4">El software INSTALADO en el Servidor Dedicado encargado de todas las tareas administrativas, contenido y monitorear los recursos del servicio, desde donde IMPORTAREMOS las películas, series y canales del proceso siguiente.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
@@ -109,7 +109,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 2</h4>
-                                <p className="">El software INSTALADO en el Servidor Dedicado encargado de todas las tareas administrativas, contenido y monitorear los recursos del servicio, desde donde IMPORTAREMOS las películas, series y canales del proceso siguiente.</p>
+                                <p className="font-light p-4">El software INSTALADO en el Servidor Dedicado encargado de todas las tareas administrativas, contenido y monitorear los recursos del servicio, desde donde IMPORTAREMOS las películas, series y canales del proceso siguiente.</p>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 4</h4>
-                                <p className="">Aplicación Android encargada de conectarse al software para traer hacia el cliente de manera GRÁFICA todo el contenido en Canales, Películas y Series.</p>
+                                <p className="font-light p-4">Aplicación Android encargada de conectarse al software para traer hacia el cliente de manera GRÁFICA todo el contenido en Canales, Películas y Series.</p>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center">
@@ -129,13 +129,13 @@ export const InfraestructuraPage = () => {
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 5</h4>
-                                <p className="">El cliente reproduce el contenido de manera satisfactoria</p>
+                                <p className="font-light p-4">El cliente reproduce el contenido de manera satisfactoria</p>
                             </div>
                         </div>
                     </div>
                 </Card>
             </div>
-            <div className="py-12 2xl:px-32">
+            <div className="py-20 2xl:px-32">
                 <h1 className='mb-6 text-3xl xl:text-5xl text-center font-extralight'>
                     <em>Paquetes</em>
                 </h1>
@@ -172,11 +172,11 @@ export const InfraestructuraPage = () => {
                                         </li>
                                     </ul>
                                     <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
-                                        <span className="text-4xl font-semilight">$</span>
-                                        <span className="text-7xl font-semilight">12,000</span>
-                                        <span className="text-3xl font-light ">/ mes</span>
+                                        <span className="text-2xl md:text-4xl font-semilight">$</span>
+                                        <span className="text-4xl md:text-7xl font-semilight">12,000</span>
+                                        <span className="text-xl md:text-3xl font-light ">/ mes</span>
                                     </div>
-                                    <h1 className='my-6 text-xl text-center'>
+                                    <h1 className='my-6 md:text-xl text-center'>
                                         <em className='font-extralight'>*Precios marcados en Pesos Mexicanos</em>
                                     </h1>
                                 </div>
@@ -219,9 +219,9 @@ export const InfraestructuraPage = () => {
                                     </li>
                                 </ul>
                                 <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
-                                    <span className="text-4xl font-semilight">$</span>
-                                    <span className="text-7xl font-semilight">15,000</span>
-                                    <span className="text-3xl font-light ">/ mes</span>
+                                    <span className="text-2xl md:text-4xl font-semilight">$</span>
+                                    <span className="text-4xl md:text-7xl font-semilight">15,000</span>
+                                    <span className="text-xl md:text-3xl font-light ">/ mes</span>
                                 </div>
                                 <h1 className='my-6 text-xl text-center'>
                                     <em className='font-extralight'>*Precios marcados en Pesos Mexicanos</em>
@@ -235,13 +235,13 @@ export const InfraestructuraPage = () => {
                             </a>
                         </Card>
                     </div>
-                    <div className='my-6 text-xl text-center'>
-                        <div className='font-sdivibold'>Que incluye la capacitación de su uso completo abarcando temas de servidor, software, aplicación android, se le entregan las páginas de donde descargará el contenido y todo el conocimiento que requiere para hacer uso del mismo.</div>
+                    <div className='my-6 lg:text-lg md:text-md text-xs text-center' style={{fontFamily: "Poppins"}}>
+                        <div className='font-semibold'>Que incluye la capacitación de su uso completo abarcando temas de servidor, software, aplicación android, se le entregan las páginas de donde descargará el contenido y todo el conocimiento que requiere para hacer uso del mismo.</div>
                     </div>
                 </Card>
             </div>
-            <div className="py-24 2xl:px-40">
-                <Card className="lg:shadow-2xl lg:p-8 border-none lg:border-solid">
+            <div className="py-24 xl:px-32">
+                <Card className="lg:shadow-2xl lg:p-8 border-none lg:border-solid" style={{fontFamily: "Poppins"}}>
                     <div className="flex flex-col lg:flex-row items-center lg:items-center justify-center">
                         <div className="flex flex-col w-[90%]">
                             <div className="mb-3 flex flex-row items-center justify-center lg:items-start lg:justify-start">

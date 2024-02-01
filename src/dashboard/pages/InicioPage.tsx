@@ -93,7 +93,7 @@ export const InicioPage = () => {
     const apiUrlImages = `http://158.69.225.52:25461/updates_img.php`;
     const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
-    axios.get(corsAnywhereUrl + apiUrlImages)
+    axios.get(apiUrlImages)
       .then((response) => {
         setImagesMovies(response.data);
         console.log(imagesMovies);
@@ -144,7 +144,7 @@ export const InicioPage = () => {
           </div>
         </div>
         <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-48 mt-[-48px] mb-12">
-          <div className="grid gap-0 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-xl">
+          <div className="grid gap-0 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-xl" style={{fontFamily: 'Poppins'}}>
             <Card className='opacity-100 rounded-none'>
               <CardHeader className="items-center">
                 <CardTitle>
@@ -155,7 +155,7 @@ export const InicioPage = () => {
                 <div className="text-xl font-semibold text-muted-foreground">
                   ACTUALIZACIONES
                 </div>
-                <p className="text-lg text-muted-foreground text-center">
+                <p className="text-lg text-muted-foreground text-center font-light">
                   Contenido nuevo todos los días hábiles y a veces fines de semana.
                 </p>
               </CardContent>
@@ -170,7 +170,7 @@ export const InicioPage = () => {
                 <div className="text-xl font-semibold text-muted-foreground">
                   CANALES EN VIVO
                 </div>
-                <p className="text-lg text-muted-foreground text-center">
+                <p className="text-lg text-muted-foreground text-center font-light">
                   Más de {countChannels} canales en vivo de diversas categorías y países con PPE incluido.
                 </p>
               </CardContent>
@@ -185,7 +185,7 @@ export const InicioPage = () => {
                 <div className="text-xl font-semibold text-muted-foreground">
                   PELÍCULAS
                 </div>
-                <p className="text-lg text-muted-foreground text-center">
+                <p className="text-lg text-muted-foreground text-center font-light">
                   Más de {countMovies} películas de estreno y títulos clásicos del cine para todas las edades.
                 </p>
               </CardContent>
@@ -200,7 +200,7 @@ export const InicioPage = () => {
                 <div className="text-xl font-semibold text-muted-foreground">
                   SERIES DE TV
                 </div>
-                <p className="text-lg text-muted-foreground text-center">
+                <p className="text-lg text-muted-foreground text-center font-light">
                 Más de {countSeries} episodios, trayendo los mejores y más nuevos títulos.
                 </p>
               </CardContent>
@@ -257,8 +257,8 @@ export const InicioPage = () => {
             </div>
           </div> */}
           <div className='py-12'>
-            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-12'>
-              <Card className='w-100 xl:w-[110%] xl:p-24 flex flex-col shadow-2xl'>
+            <div className='mt-16 grid gap-0 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 lg:mx-0'>
+              <Card className='w-100 xl:w-[110%] xl:p-20 flex flex-col shadow-2xl'>
                 <CardHeader>
                   <CardTitle className='text-left text-xl text-muted-foreground'>
                   Acerca de
@@ -275,7 +275,7 @@ export const InicioPage = () => {
                       <em style={{fontFamily: 'Playfair Display'}}>soporte</em><em className='font-extralight'> flexible.</em>
                     </h1>
                     </div>
-                    <div className='mt-4 text-left text-lg text-muted-foreground'>
+                    <div className='mt-4 text-left text-lg text-muted-foreground font-light' style={{fontFamily: 'Poppins'}}>
                       Intentamos siempre estar mejorando nuestro servicio por lo cual ofrecemos soporte mediante Telegram, WhatsApp y FB Messenger lo que lo hace en un soporte instantáneo.
                     </div>
                     <div className='mt-6 flex items-center justify-center'>
@@ -849,7 +849,7 @@ export const InicioPage = () => {
             <div className="w-[25%] h-24 bg-blueprimary" style={{ clipPath: 'polygon(100% 100%, 0% 100%, 100% 0%)' }}>
             </div>
         </div>
-        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 xl:px-64 mt-12">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 xl:px-48 mt-12">
           <div className='py-12'>
             <h1 className='mb-6 text-5xl text-center font-extralight'>
               <em>Testimoniales</em>

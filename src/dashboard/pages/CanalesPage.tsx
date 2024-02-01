@@ -42,7 +42,7 @@ export const CanalesPage = () => {
     <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
         <HeroPages title="Canales"/>
-        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-64 mt-12">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
             <h1 className='mb-6 text-5xl text-center font-extralight'>
               <em>¡Contamos con <b>{count}</b> canales y contando!</em>

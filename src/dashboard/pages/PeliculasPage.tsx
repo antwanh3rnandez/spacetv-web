@@ -42,7 +42,7 @@ export const PeliculasPage = () => {
     <div className="flex-col md:flex">
       <div className="relative w-full bg-black h-[220px]">
         <HeroPages title="Películas"/>
-        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-32 lg:px-64 mt-12">
+        <div className="relative flex-1 space-y-4 px-6 sm:px-16 md:px-24 lg:px-32 mt-12">
           <div className='py-12'>
             <h1 className='mb-6 text-5xl text-center font-extralight'>
               <em>¡Contamos con <b>{count}</b> películas y contando!</em>
@@ -60,7 +60,7 @@ export const PeliculasPage = () => {
             </h1>
             <div className='mt-16 2xl:px-24'>
               <Card className='shadow-2xl rounded-none border-2 xl:p-6'>
-                <Tabs defaultValue="63" className="w-[100%]">
+                <Tabs defaultValue="65" className="w-[100%]">
                   <TabsList className="mx-8 mt-6 grid gap-2 md:grid-cols-2 xl:grid-cols-4 h-[100%] p-3 shadow-lg">
                     {
                       categories.map((categoria, index) => (

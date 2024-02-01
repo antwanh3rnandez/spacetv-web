@@ -2,8 +2,10 @@ import { ReactNode, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ModeToggle } from "../components/ToggleDarkMode";
 import logo from "../assets/spacetv-logo.png";
-import { IconChevronDown, IconMenu2 } from "@tabler/icons-react";
+import { IconChevronDown, IconChevronRight, IconMenu2 } from "@tabler/icons-react";
 import { Card } from "../components/ui/card";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 export const DashboardLayout = ({
   children,
@@ -11,6 +13,11 @@ export const DashboardLayout = ({
   children: ReactNode;
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
+
+  const [isHover, setIsHover] = useState(false); 
+
+  const [isHoverResponsive, setIsHoverResposive] = useState(false); 
+
 
   const menuOptions = [
     {
@@ -80,6 +87,15 @@ export const DashboardLayout = ({
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsHover(false);
+  };
+
+  const toggleSubMenu = () => {
+    setIsHover(!isHover);
+  };
+
+  const toggleSubMenuResposive = () => {
+    setIsHoverResposive(!isHoverResponsive);
   };
 
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) => {
@@ -90,18 +106,18 @@ export const DashboardLayout = ({
     <>
       <div className="border-b">
         <div
-          className={`flex ${isMobileMenuOpen ? "border-b-2" : ""} h-28 items-center px-4 sm:px-16 md:px-32 lg:px-64`}
+          className={`flex flex-row ${isMobileMenuOpen ? "border-b-2" : ""} h-28 items-center justify-center px-4 lg:space-x-6`}
         >
           <nav className="flex items-center space-x-4 lg:space-x-6">
             <a href="/">
-              <img className="w-16" src={logo} alt="Logo" />
+              <img className="w-20" src={logo} alt="Logo" />
             </a>
             {/* Menú Normal */}
-            <div className="hidden lg:flex space-x-4">
+            <div className="hidden lg:flex lg:space-x-4 md:space-x-3 md:text-sm xl:space-x-6 2xl:space-x-10">
               {menuOptions.map((option, index) => (
-                <div key={index}>
+                <div key={index} style={{fontFamily: 'Poppins'}}>
                   {option.dropdown ? (
-                    <div className="relative group">
+                    <div className="relative group" onMouseEnter={toggleSubMenu}>
                       <div className="flex flex-row text-muted-foreground hover:text-primary">
                         <button
                           onClick={closeMobileMenu}
@@ -113,7 +129,7 @@ export const DashboardLayout = ({
                       </div>
                       <div
                         className={`${
-                          isMobileMenuOpen ? "block" : "hidden"
+                          isHover ? "block" : "hidden"
                         } absolute w-96 left-0 mt-2 space-y-2 origin-top-right bg-slate-100 dark:bg-gray-600 z-50 shadow-lg rounded-lg group-hover:block hover`}
                       >
                         {option.children?.map((child, index) => (
@@ -121,6 +137,7 @@ export const DashboardLayout = ({
                             to={child.path}
                             className="w-full block px-6 py-2 text-md text-black dark:text-white font-light text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
                             key={index}
+                            style={{fontFamily: 'Poppins'}}
                           >
                             {child.name}
                           </NavLink>
@@ -154,25 +171,60 @@ export const DashboardLayout = ({
         {/* Menú Responsive */}
         {isMobileMenuOpen && (
           <div className="fixed lg:hidden top-0 right-0 h-full w-80 bg-gray-600 z-50 shadow-lg">
-            <div className="py-2 space-y-2 border-b-2 border-primary-foreground">
+            <div className="py-2 space-y-2 border-b-2 border-primary-foreground text-sm">
               <div className="flex flex-col items-center py-4">
                 <a href="/">
                   <img className="w-16" src={logo} alt="Logo" />
                 </a>
               </div>
               {menuOptions.map((option, index) => (
-                <div key={index}>
+                <div key={index} style={{fontFamily: 'Poppins'}}>
+                {option.dropdown ? (
+                  <div className="relative group" onClick={toggleSubMenuResposive}>
+                    <div className="flex flex-row space-x-2 text-muted-foreground hover:text-primary">
+                      <button
+                        onClick={closeMobileMenu}
+                        className={getNavLinkClass({ isActive: true })}
+                      >
+                        <div className="pl-4">
+                          {option.name}
+                        </div>
+                      </button>
+                      {isHoverResponsive ? option.icon : <IconChevronRight/>}
+                    </div>
+                    <div
+                      className={`${
+                        isHoverResponsive ? "block" : "hidden"
+                      } w-full left-0 mt-2 space-y-1 origin-top-right`}
+                    >
+                      {option.children?.map((child, index) => (
+                        <NavLink
+                          to={child.path}
+                          className="w-full block pl-8 py-2 text-sm font-light text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
+                          key={index}
+                          style={{fontFamily: 'Poppins'}}
+                        >
+                          {child.name}
+                        </NavLink>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
                   <NavLink
                     to={option.path}
-                    className="block pl-6 text-md text-black dark:text-white font-normal text-primary capitalize transition-colors hover:text-muted-foreground dark:hover:text-muted-foreground"
-                    onClick={closeMobileMenu}
+                    className={getNavLinkClass}
+                    key={index}
                   >
-                    {option.name}
+                    <div className="pl-4">
+                      {option.name}
+                    </div>
                   </NavLink>
-                  {index < menuOptions.length - 1 && (
-                    <hr className="border-[1px] w-[100%] border-primary-foreground my-2"></hr>
-                  )}
-                </div>
+                )}
+                {/* Divisor entre cada elemento padre del menu */}
+                {index < menuOptions.length - 1 && (
+                  <hr className="border-[.5px] w-[100%] border-primary-foreground my-2"></hr>
+                )}
+              </div>
               ))}
             </div>
           </div>
@@ -180,6 +232,16 @@ export const DashboardLayout = ({
       </div>
       <main className="" onClick={closeMobileMenu}>
         {children}
+        <FloatingWhatsApp
+            phoneNumber='+5218125949904'
+            accountName='SpaceTV+'
+            statusMessage='Normalmente responde en algunos segundos'
+            chatMessage="Hola, Tenemos promociones para ti, pregunta aquí 👇🏻"
+            placeholder='Escribe un mensaje...'
+            chatboxStyle={{color: 'black'}}
+            avatar={logo}
+          />
+        <ScrollToTopButton />
       </main>
     </>
   );
