@@ -90,7 +90,7 @@ export const InicioPage = () => {
   }, []);
 
   useEffect(() => {
-    const apiUrlImages = `http://158.69.225.52:25461/updates_img.php`;
+    const apiUrlImages = `https://spacetv-api3.axol.dev`;
     //const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
     axios.get(apiUrlImages)
