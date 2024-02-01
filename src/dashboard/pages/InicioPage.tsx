@@ -91,7 +91,7 @@ export const InicioPage = () => {
 
   useEffect(() => {
     const apiUrlImages = `http://158.69.225.52:25461/updates_img.php`;
-    const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
+    //const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
     axios.get(apiUrlImages)
       .then((response) => {
