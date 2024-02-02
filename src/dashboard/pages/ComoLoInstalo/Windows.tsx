@@ -6,9 +6,11 @@ import screen1 from "../../../assets/screenshot1-v3.png";
 import screen2 from "../../../assets/screenshot2-v3.png";
 import screen3 from "../../../assets/screenshot3-v3.png";
 
+import video from "../../../assets/windows.mp4"
+
 export const WindowsPage = () => {
 
-  const videoSource = 'https://www.spacetv.com.mx/wp-content/uploads/2021/08/windows.mkv';
+  //const videoSource = 'https://www.spacetv.com.mx/wp-content/uploads/2021/08/windows.mkv';
 
   return (
     <div className="flex-col md:flex">
@@ -26,7 +28,7 @@ export const WindowsPage = () => {
                 <div className="grid lg:grid-cols-2" style={{fontFamily: 'Poppins'}}>
                     <div className="p-3 lg:w-[110%] z-10">
                         <video width="100%" controls>
-                            <source src={videoSource} type="video/mp4" />
+                            <source src={video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -36,7 +38,7 @@ export const WindowsPage = () => {
                         <p className="text-md font-light mb-4">* Descargar la app de SpaceTV+ para Windows desde el botón naranja de aquí abajo.</p>
                         <p className="text-md font-light mb-6">Una vez tenemos el archivo descargado simplemente seguimos los pasos del video.</p>
                         <div className="flex flex-row items-center justify-center">
-                            <a href="https://www.spacetv.com.mx/SpaceTV+(1.2.1).exe" target="_blank"><Button className='bg-orange-500 hover:bg-orange-800 text-white rounded-full px-8 py-6'>DESCARGAR SPACETV+</Button></a>
+                            <a href="http://158.69.225.52/apps/SpaceTV+(1.2.1).exe" target="_blank"><Button className='bg-orange-500 hover:bg-orange-800 text-white rounded-full px-8 py-6'>DESCARGAR SPACETV+</Button></a>
                         </div>
                     </div>
                 </div>
@@ -53,15 +55,15 @@ export const WindowsPage = () => {
             </div>
             <div className="mt-18 mb-24">
                 <div className="w-[100%] flex items-end">
-                    <div className="relative w-[30%] z-0">
+                    <div className="relative w-[30%] z-0 shadow-xl">
                         <img className="w-full" src={screen1} alt="Seccion TV"/>
                     </div>
                     
-                    <div className="relative w-[40%] z-10">
+                    <div className="relative w-[40%] z-10 shadow-xl">
                         <img className="w-full" src={screen2} alt="Seccion Principal"/>
                     </div>
                     
-                    <div className="relative w-[30%] z-0">
+                    <div className="relative w-[30%] z-0 shadow-xl">
                         <img className="w-full" src={screen3} alt="Seccion Peliculas"/>
                     </div>
                 </div>

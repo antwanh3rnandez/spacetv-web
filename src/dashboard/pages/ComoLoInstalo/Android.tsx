@@ -53,7 +53,7 @@ export const AndroidPage = () => {
                                 <h4 className="font-semibold">PASO 2</h4>
                                 <p className="font-light p-4">Una vez realizado el paso anterior para que nos permita instalar el app. Ingresamos a su navegador y escribimos el siguiente URL:</p>
                                 <p className="font-light">
-                                    <a href="https://www.spacetv.com.mx/SpaceTV+(v2.1).apk" target="_blank" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v2.1).apk</a>
+                                    <a href="http://158.69.225.52/apps/SpaceTV+(3.0).apk" target="_blank" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v3.0).apk</a>
                                 </p>
                                 <p className="font-light p-4 italic">Se comenzará la descarga.</p>
                             </div>

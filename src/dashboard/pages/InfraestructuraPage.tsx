@@ -19,7 +19,7 @@ const FeatureItem = ({ icon, title, description }: FeatureItemProps) => (
         {icon}
       </div>
       <div className="mt-4 lg:mt-0 text-center lg:text-start" style={{fontFamily: "Poppins"}}>
-        <h4 className="font-semibold">{title}</h4>
+        <h4 className="font-semibold mb-2">{title}</h4>
         <p className="font-light">{description}</p>
       </div>
     </div>

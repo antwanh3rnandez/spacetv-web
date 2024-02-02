@@ -134,9 +134,12 @@ export const InicioPage = () => {
                 ¡Adquiera su servicio ahora!
                 </h2>
               </div>
-              <div className="mt-[-2px]">
+              <div className="my-6 flex md:flex-row flex-col gap-3">
                 <a href='#paquetes'>
                   <Button className='blue-primary text-white rounded-full px-8 py-6'>COMPRAR AHORA</Button>
+                </a>
+                <a href='http://cuenta.spacetv.com.mx'>
+                  <Button className='bg-red-500 text-white rounded-full px-8 py-6'>SOLICITAR DEMO</Button>
                 </a>
               </div>
             </div>

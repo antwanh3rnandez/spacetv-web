@@ -3,6 +3,8 @@ import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
 import { IconDownload, IconLockOpen, IconRefresh } from "@tabler/icons-react";
 
+import smarters from "../../../assets/smarters.jpeg";
+
 export const IPhonePage = () => {
 
   return (
@@ -58,7 +60,7 @@ export const IPhonePage = () => {
                         <div className="py-4 lg:mt-0 text-center lg:text-center">
                             <h4 className="font-semibold tracking-widest mb-4">CAPTURA</h4>
                             <div className="w-full flex items-center justify-center">
-                                <img className="w-4/6" src="https://www.spacetv.com.mx/wp-content/uploads/2018/10/photo5012873747157329900.jpg"></img>
+                                <img className="w-4/6" src={smarters}></img>
                             </div>
                         </div>
                     </div>

@@ -15,13 +15,13 @@ export const Footer = () => {
               className="w-full h-full bg-black bg-opacity-50 text-white text-center p-4 rounded"
               style={{ backdropFilter: 'blur(0px)' }}
             >
-              <div className="w-full h-full flex flex-col space-y-6 lg:flex-row lg:space-x-6 items-center justify-center">
+              <div className="w-full h-full flex flex-col gap-6 lg:flex-row items-center justify-center">
                 <h2 className="text-3xl xl:text-5xl text-center font-extralight">
                   <em className='font-semibold'>Únete a la familia! </em>
                   <em>Adquiere nuestro servicio.</em>
                 </h2>
-                <div className="mt-[2px]">
-                  <a href='#paquetes'>
+                <div className="">
+                  <a href='/#paquetes'>
                     <Button className='blue-primary text-white rounded-md px-8 py-6'>COMPRAR AHORA</Button>
                   </a>
                 </div>
