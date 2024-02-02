@@ -24,7 +24,7 @@ interface CustomSplideProps {
         }}
       >
         {images.map((image, index) => (
-          <SplideSlide key={index} id={`${id}-slide${index}`}>
+          <SplideSlide key={index} id={`${id}-slide${index}`} className="loading-slide">
             <img src={`https://spacetv-api2.axol.dev${image.url.slice(1)}`} alt={`Image ${index + 1}`} />
           </SplideSlide>
         ))}

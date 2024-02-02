@@ -91,7 +91,6 @@ export const InicioPage = () => {
 
   useEffect(() => {
     const apiUrlImages = `https://spacetv-api3.axol.dev`;
-    //const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
     axios.get(apiUrlImages)
       .then((response) => {

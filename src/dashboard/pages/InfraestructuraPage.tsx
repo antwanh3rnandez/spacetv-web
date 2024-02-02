@@ -18,9 +18,9 @@ const FeatureItem = ({ icon, title, description }: FeatureItemProps) => (
       <div className="flex-shrink-0 lg:mr-4 flex flex-col items-center">
         {icon}
       </div>
-      <div className="mt-4 lg:mt-0 text-center lg:text-start">
+      <div className="mt-4 lg:mt-0 text-center lg:text-start" style={{fontFamily: "Poppins"}}>
         <h4 className="font-semibold">{title}</h4>
-        <p className="">{description}</p>
+        <p className="font-light">{description}</p>
       </div>
     </div>
 );
@@ -108,7 +108,7 @@ export const InfraestructuraPage = () => {
                                 <IconNumber3 size={48} className="text-blueprimary"/>
                             </div>
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
-                                <h4 className="font-semibold">PASO 2</h4>
+                                <h4 className="font-semibold">PASO 3</h4>
                                 <p className="font-light p-4">El software INSTALADO en el Servidor Dedicado encargado de todas las tareas administrativas, contenido y monitorear los recursos del servicio, desde donde IMPORTAREMOS las películas, series y canales del proceso siguiente.</p>
                             </div>
                         </div>
