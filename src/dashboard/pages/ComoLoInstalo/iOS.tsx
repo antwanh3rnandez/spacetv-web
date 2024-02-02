@@ -1,7 +1,7 @@
 import { Card } from "../../../components/ui/card"
 import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
-import { IconBrandGooglePlay, IconCheck, IconDownload, IconLockOpen, IconRefresh, IconSearch, IconSettings, IconShieldLock } from "@tabler/icons-react";
+import { IconDownload, IconLockOpen, IconRefresh } from "@tabler/icons-react";
 
 export const IPhonePage = () => {
 
