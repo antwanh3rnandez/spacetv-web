@@ -66,8 +66,20 @@ export const InicioPage = () => {
   //console.log(imagesMovies);
 
   const palabras = ["FireTV", "SmartTV", "Windows", "Roku", "AndroidTV", "Mac", "iPhone", "iPad"];
-  const [palabraActual, setPalabraActual] = useState("Dispositivo");
+
+  const clasesAnimacion = [
+    //'fadeIn',
+    //'fadeOut',
+    //'colorChange',
+    //'flash'
+    'glow',
+    //'typewriter'
+  ];
+
+  //const [palabraActual, setPalabraActual] = useState("Dispositivo");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [palabraActual, setPalabraActual] = useState(palabras[currentIndex]);
+  const [claseAnimacion, setClaseAnimacion] = useState(clasesAnimacion[0]);
 
   const [countChannels, setCountChannels] = useState(0);
   const [countMovies, setCountMovies] = useState(0);
@@ -105,7 +117,7 @@ export const InicioPage = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % palabras.length);
-    }, 3000);
+    }, 3500);
 
     return () => {
       clearInterval(intervalId);
@@ -114,6 +126,10 @@ export const InicioPage = () => {
 
   useEffect(() => {
     setPalabraActual(palabras[currentIndex]);
+
+    // Cambiar la clase de animación al cambiar de palabra
+    const nuevaClaseAnimacion = clasesAnimacion[currentIndex % clasesAnimacion.length];
+    setClaseAnimacion(nuevaClaseAnimacion);
   }, [currentIndex]);
 
   return (
@@ -126,9 +142,7 @@ export const InicioPage = () => {
             style={{ backdropFilter: 'blur(0px)' }}
           >
             <div className="w-full h-full flex flex-col items-center justify-center">
-                <h2 className="hero-text">
-                  El mejor contenido para su {palabraActual}
-                </h2>
+              <h2 className="hero-text">El mejor contenido para su <span className={`hero-animated ${claseAnimacion}`}>{palabraActual}</span></h2>
               <div className="mt-[-12px]">
                 <h2 className="hero-text">
                 ¡Adquiera su servicio ahora!

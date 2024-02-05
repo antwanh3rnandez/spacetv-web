@@ -3,11 +3,167 @@
 @tailwind utilities;
 
 .hero-text {
-  font-family: Amatic SC;
+  font-family: Protest Riot;
   font-weight: 400;
   font-size: 3.5em;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.hero-animated {
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 30px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 40px #34b3c1, 0 0 20px #4dbbc7;
+  }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de ondulación */
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animación de escalado */
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  33% {
+    color: rgb(63, 215, 61);
+  }
+  66% {
+    color: rgb(16, 219, 230);
+  }
+  99% {
+    color: rgb(204, 255, 0);
+  }
+  /* 100% {
+    color: rgb(255, 72, 6);
+  } */
+}
+
+/* Animación de aparecimiento */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Animación de destello */
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Animación de balanceo de lado a lado */
+@keyframes sideToSide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.glow {
+  animation-name: glow;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.wave {
+  animation-name: wave;
+}
+
+.rotate {
+  animation-name: rotate;
+}
+
+.scale {
+  animation-name: scale;
+}
+
+.colorChange {
+  animation-name: colorChange;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.flash {
+  animation-name: flash;
+}
+
+.sideToSide {
+  animation-name: sideToSide;
 }
 
 .blue-primary {

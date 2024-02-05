@@ -10,4 +10,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+/*   server: {
+    // Configura el servidor para manejar solicitudes de rutas desconocidas
+    // redirigiendo a tu aplicación principal (index.html)
+    proxy: {
+      '/': 'https://www.spacetv.com.mx', // Ajusta el puerto según tu configuración
+    },
+  }, */
 })

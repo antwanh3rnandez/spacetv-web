@@ -173,7 +173,7 @@ export const InfraestructuraPage = () => {
                                     </ul>
                                     <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
                                         <span className="text-2xl md:text-4xl font-semilight">$</span>
-                                        <span className="text-4xl md:text-7xl font-semilight">12,000</span>
+                                        <span className="text-4xl md:text-7xl font-semilight">13,000</span>
                                         <span className="text-xl md:text-3xl font-light ">/ mes</span>
                                     </div>
                                     <h1 className='my-6 md:text-xl text-center'>
@@ -220,7 +220,7 @@ export const InfraestructuraPage = () => {
                                 </ul>
                                 <div style={{fontFamily: 'Poppins', fontWeight: '400'}} className="flex items-center justify-start mb-4">
                                     <span className="text-2xl md:text-4xl font-semilight">$</span>
-                                    <span className="text-4xl md:text-7xl font-semilight">15,000</span>
+                                    <span className="text-4xl md:text-7xl font-semilight">16,000</span>
                                     <span className="text-xl md:text-3xl font-light ">/ mes</span>
                                 </div>
                                 <h1 className='my-6 text-xl text-center'>
