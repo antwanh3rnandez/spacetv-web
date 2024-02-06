@@ -5,7 +5,7 @@
 .hero-text {
   font-family: Protest Riot;
   font-weight: 400;
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }

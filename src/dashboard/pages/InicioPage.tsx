@@ -142,9 +142,9 @@ export const InicioPage = () => {
             style={{ backdropFilter: 'blur(0px)' }}
           >
             <div className="w-full h-full flex flex-col items-center justify-center">
-              <h2 className="hero-text">El mejor contenido para su <span className={`hero-animated ${claseAnimacion}`}>{palabraActual}</span></h2>
+              <h2 className="hero-text lg:text-[3.5em] text-[2.5em]">El mejor contenido para su <span className={`hero-animated ${claseAnimacion}`}>{palabraActual}</span></h2>
               <div className="mt-[-12px]">
-                <h2 className="hero-text">
+                <h2 className="hero-text lg:text-[3.5em] text-[2.5em]">
                 ¡Adquiera su servicio ahora!
                 </h2>
               </div>

@@ -11,7 +11,7 @@ export const HeroPages = ({ title }: { title: string }) => {
           >
             <div className="w-full h-full flex flex-col items-center justify-center">
               <div className="mt-[-12px]">
-                <h2 className="hero-text">
+                <h2 className="hero-text lg:text-[3.5em] text-[2.5em]">
                   {title}
                 </h2>
               </div>
