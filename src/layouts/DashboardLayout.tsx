@@ -7,6 +7,68 @@ import { Card } from "../components/ui/card";
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
+export const menuOptions = [
+  {
+    path: "/",
+    name: "Inicio",
+    dropdown: false,
+  },
+  {
+    path: "",
+    name: "¿Cómo lo instalo?",
+    icon: <IconChevronDown/>,
+    dropdown: true,
+    children: [
+      { path: "/instalar-roku", 
+        name: "Instalar SpaceTV+ (Roku)",
+      },
+      { path: "/instalar-android", 
+        name: "Instalar SpaceTV+ (FireTV o AndroidTV)",
+      },
+      { path: "/instalar-windows", 
+        name: "Instalar SpaceTV+ (Windows)",
+      },
+      { path: "/instalar-mac", 
+        name: "Instalar SpaceTV+ (Mac)",
+      },
+      { path: "/instalar-ios", 
+        name: "Instalar SpaceTV+ (iOS/iPhone/iPad)",
+      },
+      { path: "/instalar-smarttv-ssiptv", 
+        name: "Instalar SpaceTV+ (SmartTV con SSIPTV)",
+      },
+      { path: "/instalar-smarttv-smartiptv", 
+        name: "Instalar SpaceTV+ (SmartTV con SmartIPTV)",
+      },
+    ],
+  },
+  {
+    path: "/canales",
+    name: "Canales",
+    dropdown: false,
+  },
+  {
+    path: "/peliculas",
+    name: "Peliculas",
+    dropdown: false,
+  },
+  {
+    path: "/series",
+    name: "Series",
+    dropdown: false,
+  },
+  {
+    path: "/infraestructura",
+    name: "¿Quiere tener su Propio Servicio IPTV?",
+    dropdown: false,
+  },
+  {
+    path: "/canales-restream",
+    name: "Canales Re-Stream",
+    dropdown: false,
+  },
+];
+
 export const DashboardLayout = ({
   children,
 }: {
@@ -17,69 +79,6 @@ export const DashboardLayout = ({
   const [isHover, setIsHover] = useState(false); 
 
   const [isHoverResponsive, setIsHoverResposive] = useState(false); 
-
-
-  const menuOptions = [
-    {
-      path: "/",
-      name: "inicio",
-      dropdown: false,
-    },
-    {
-      path: "",
-      name: "¿Cómo lo instalo?",
-      icon: <IconChevronDown/>,
-      dropdown: true,
-      children: [
-        { path: "/instalar-roku", 
-          name: "Instalar SpaceTV+ (Roku)",
-        },
-        { path: "/instalar-android", 
-          name: "Instalar SpaceTV+ (FireTV o AndroidTV)",
-        },
-        { path: "/instalar-windows", 
-          name: "Instalar SpaceTV+ (Windows)",
-        },
-        { path: "/instalar-mac", 
-          name: "Instalar SpaceTV+ (Mac)",
-        },
-        { path: "/instalar-ios", 
-          name: "Instalar SpaceTV+ (iOS/iPhone/iPad)",
-        },
-        { path: "/instalar-smarttv-ssiptv", 
-          name: "Instalar SpaceTV+ (SmartTV con SSIPTV)",
-        },
-        { path: "/instalar-smarttv-smartiptv", 
-          name: "Instalar SpaceTV+ (SmartTV con SmartIPTV)",
-        },
-      ],
-    },
-    {
-      path: "/canales",
-      name: "Canales",
-      dropdown: false,
-    },
-    {
-      path: "/peliculas",
-      name: "Peliculas",
-      dropdown: false,
-    },
-    {
-      path: "/series",
-      name: "Series",
-      dropdown: false,
-    },
-    {
-      path: "/infraestructura",
-      name: "¿Quiere tener su Propio Servicio IPTV?",
-      dropdown: false,
-    },
-    {
-      path: "/canales-restream",
-      name: "Canales Re-Stream",
-      dropdown: false,
-    },
-  ];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
