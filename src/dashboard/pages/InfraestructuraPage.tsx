@@ -2,9 +2,9 @@ import { Card } from "../../components/ui/card"
 import { Footer } from "../../components/pages/Footer";
 import { HeroPages } from "../../components/pages/HeroPages";
 import { IconBrandAndroid, IconCheck, IconCode, IconDeviceTv, IconNumber1, IconNumber2, IconNumber3, IconNumber4, IconNumber5, IconQuote, IconServer2 } from "@tabler/icons-react";
-import infraestructura from "../../assets/infraestructura.png"
+import infraestructura from "../../assets/infraestructura.webp"
 import logo from "../../assets/spacetv-logo.png"
-import screen from "../../assets/screen.jpg"
+import screen from "../../assets/screen.webp"
 import { Button } from "../../components/ui/button";
 
 interface FeatureItemProps {

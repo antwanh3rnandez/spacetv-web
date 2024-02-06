@@ -3,7 +3,7 @@ import {
   IconBrandFacebook, 
   IconBrandTelegram, 
 } from '@tabler/icons-react/';
-import footer from "../../assets/bg.png"
+import footer from "../../assets/bg.webp"
 
 export const Footer = () => {
     return (
@@ -45,7 +45,7 @@ export const Footer = () => {
         </div>
         <div className='w-full h-24 flex flex-col items-center justify-center'>
           <h1 className=''>
-            © 2023 SpaceTV+. Sitio web creado por GethyMX
+            © 2024 SpaceTV+. Sitio web creado por GethyMX
           </h1>
         </div>
         </>

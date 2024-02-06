@@ -3,7 +3,7 @@ import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
 import { IconDownload, IconLockOpen, IconRefresh } from "@tabler/icons-react";
 
-import smarters from "../../../assets/smarters.jpeg";
+import smarters from "../../../assets/smarters.webp";
 
 export const IPhonePage = () => {
 

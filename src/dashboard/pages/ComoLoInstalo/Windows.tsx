@@ -2,9 +2,9 @@ import { Footer } from "../../../components/pages/Footer";
 import { HeroPages } from "../../../components/pages/HeroPages";
 import { Button } from "../../../components/ui/button";
 
-import screen1 from "../../../assets/screenshot1-v3.png";
-import screen2 from "../../../assets/screenshot2-v3.png";
-import screen3 from "../../../assets/screenshot3-v3.png";
+import screen1 from "../../../assets/screenshot1-v3.webp";
+import screen2 from "../../../assets/screenshot2-v3.webp";
+import screen3 from "../../../assets/screenshot3-v3.webp";
 
 import video from "../../../assets/windows.mp4"
 

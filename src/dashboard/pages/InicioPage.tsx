@@ -7,8 +7,8 @@ import {
   CardTitle 
 } from "../../components/ui/card"
 import { Button } from "../../components/ui/button"
-import hero from "../../assets/hero.png"
-import screenshot from "../../assets/Home_ScreenShot.jpg"
+import hero from "../../assets/hero.webp"
+import screenshot from "../../assets/screenshot2-v3.webp"
 import { 
   IconRefresh, 
   IconDeviceTv, 
