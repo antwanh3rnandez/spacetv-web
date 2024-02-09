@@ -27,43 +27,7 @@ import TestimonialCarousel from '../../components/pages/inicio/TestimonialCarous
 import { Footer } from '../../components/pages/Footer';
 import { CustomSplide } from '../../components/pages/inicio/CustomSplide';
 
-const testimonials = [
-  {
-    text: 'Yo ya tengo más de 1 año con ustedes y muy agusto y recomendable servicio.',
-    author: 'Miguel Marenc',
-    age: 'Suscriptor desde hace 3 años.',
-    pic: '/user.png',
-  },
-  {
-    text: 'Han mejorado sustancialmente en este tiempo que he estado con ustedes, excelente canal!',
-    author: 'Jossuet Amir Barrios González',
-    age: 'Suscriptor desde hace 3 años.',
-    pic: '/user.png',
-  },
-  {
-    text: 'Esta muy bien tu programación recomenda 10000%',
-    author: 'Jfkdj Montevideo',
-    age: 'Suscriptor desde hace 2 años.',
-    pic: '/user.png',
-  },
-  {
-    text: 'Exelente servicio.. Y hasta la fecha no eh tenido fallas de ningún tipo.. Gracias por el servicio y fiabilidad',
-    author: 'Liliana Sarai',
-    age: 'Suscriptor desde hace 1 año.',
-    pic: '/user.png',
-  },
-  {
-    text: 'Excelente!!',
-    author: 'Michel Akoury Malacon',
-    age: 'Suscriptor desde hace 3 años.',
-    pic: '/user.png',
-  },
-];
-
 export const InicioPage = () => {
-
-  //const { imagesMovies } = useImageImports();
-  //console.log(imagesMovies);
 
   const palabras = ["FireTV", "SmartTV", "Windows", "Roku", "AndroidTV", "Mac", "iPhone", "iPad"];
 
@@ -86,6 +50,7 @@ export const InicioPage = () => {
   const [countSeries, setCountSeries] = useState(0);
 
   const [imagesMovies, setImagesMovies] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     const apiUrl = `https://spacetv-api.axol.dev/cuenta_api/contenido/null/`;
@@ -112,7 +77,20 @@ export const InicioPage = () => {
       .catch((error) => {
         console.error("Error al obtener datos:", error);
       });
-}, []);
+  }, []);
+
+  useEffect(() => {
+    const apiUrlTestimonial = `https://spacetv-api.axol.dev/cuenta_api/testimonios/`;
+
+    axios.get(apiUrlTestimonial)
+      .then((response) => {
+        setTestimonials(response.data.data);
+        console.log(testimonials);
+      })
+      .catch((error) => {
+        console.error("Error al obtener datos:", error);
+      });
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {

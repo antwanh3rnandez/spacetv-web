@@ -1,7 +1,14 @@
 export interface TestimonialType {
-    text: string;
-    author: string;
-    age: string;
-    pic: string;
+    testimonio: string;
+    nombre: string;
+    antiguedad: string;
+    foto: string;
+}
+  
+export interface TestimonialType2 {
+    testimonio: string;
+    nombre: string;
+    antiguedad: string;
+    foto: string;
 }
   
