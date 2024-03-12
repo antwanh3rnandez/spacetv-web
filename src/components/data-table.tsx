@@ -106,8 +106,7 @@ export function DataTable<TData, TValue>({
             </div>
             <div className="flex items-center justify-end space-x-2 py-4">
                 <div className="flex-1 text-sm text-muted-foreground">
-                    {table.getFilteredSelectedRowModel().rows.length} de{" "}
-                    {table.getFilteredRowModel().rows.length} resultados.
+                    {`Mostrando ${Math.min(table.getState().pagination.pageSize * table.getState().pagination.pageIndex + 1, table.getFilteredRowModel().rows.length)} a ${Math.min(table.getState().pagination.pageSize * (table.getState().pagination.pageIndex + 1), table.getFilteredRowModel().rows.length)} en un total de ${table.getFilteredRowModel().rows.length} resultados.`}
                 </div>
                 <div className="space-x-2">
                     <Button
