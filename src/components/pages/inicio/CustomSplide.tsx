@@ -1,5 +1,8 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Skeleton } from "../../../components/ui/skeleton"
 
 interface CustomSplideProps {
     id: string;
@@ -25,9 +28,54 @@ interface CustomSplideProps {
       >
         {images.map((image, index) => (
           <SplideSlide key={index} id={`${id}-slide${index}`} className="loading-slide">
-            <img src={`https://spacetv-api2.axol.dev${image.url.slice(1)}`} alt={`Image ${index + 1}`} />
+            <img src={`${import.meta.env.VITE_MOVIES_IMAGE_BASE_URL+image.url.slice(1)}`} alt={`Image ${index + 1}`} />
           </SplideSlide>
         ))}
       </Splide>
+    );
+  }
+
+  export function LatestMovies() {
+
+    const [imagesMovies, setImagesMovies] = useState([]);
+    const [isLoading, setIsLoading] = useState(true); 
+
+    useEffect(() => {
+      const apiUrlImages = import.meta.env.VITE_MOVIES_IMAGES_URL;
+  
+      axios
+        .get(apiUrlImages)
+        .then((response) => {
+          setImagesMovies(response.data);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error al obtener datos:", error);
+          setIsLoading(false);
+        });
+    }, []);
+
+    return (
+      
+      <div className='py-12'>
+        <h1 className='mb-6 text-5xl text-center font-extralight'>
+          <em>Disfruta de los mejores estrenos</em>
+        </h1>
+        <h1 className='mb-6 text-2xl text-center font-extralight'>
+          Contamos con los últimos estrenos de cine así como los mejores títulos
+        </h1>
+        <div className='w-full h-auto max-h-[400px]'>
+          {isLoading ? (
+            <div className="flex flex-row md:grid md:grid-cols-8 w-full lg:h-[35vh] h-[15vh] gap-[2px] shadow-xl">
+              {[...Array(8)].map((_, index) => (
+                <Skeleton key={index} className="w-[100%] h-[100%] min-h-[100px] min-w-[100px] mb-4 bg-[#999898]" />
+              ))}
+            </div>
+          ) : (
+            <CustomSplide id="splideMovies" perPage={8} extraClass={`shadow-xl`} images={imagesMovies} />
+          )}
+        </div>
+      </div>
+
     );
   }
