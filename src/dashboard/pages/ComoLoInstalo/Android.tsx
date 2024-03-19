@@ -29,7 +29,7 @@ export const AndroidPage = () => {
                                 <h4 className="font-semibold">PASO ÚNICO</h4>
                                 <p className="font-light p-4">Ahora podemos instalar SpaceTV+ desde PlayStore solamente buscando «SpaceTV+» en el buscador de PlayStore o bien y ingresando al siguiente URL:</p>
                                 <p className="font-light">
-                                    <a href="https://play.google.com/store/apps/details?id=com.spacetvplus.spacetvplusiptvbox" target="_blank" className="text-blueprimary">https://play.google.com/store/apps/details?id=com.spacetvplus.spacetvplusiptvbox</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.spacetvplus.spacetvplusiptvbox" className="text-blueprimary">https://play.google.com/store/apps/details?id=com.spacetvplus.spacetvplusiptvbox</a>
                                 </p>
                                 <p className="font-light p-4 italic">Se comenzará la descarga.</p>
                             </div>
@@ -53,7 +53,7 @@ export const AndroidPage = () => {
                                 <h4 className="font-semibold">PASO 2</h4>
                                 <p className="font-light p-4">Una vez realizado el paso anterior para que nos permita instalar el app. Ingresamos a su navegador y escribimos el siguiente URL:</p>
                                 <p className="font-light">
-                                    <a href="http://158.69.225.52/apps/SpaceTV+(3.0).apk" target="_blank" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v3.0).apk</a>
+                                    <a href="https://www.spacetv.com.mx/SpaceTV+(3.0).apk" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v3.0).apk</a>
                                 </p>
                                 <p className="font-light p-4 italic">Se comenzará la descarga.</p>
                             </div>

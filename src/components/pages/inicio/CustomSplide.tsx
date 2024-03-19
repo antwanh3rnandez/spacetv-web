@@ -51,7 +51,7 @@ interface CustomSplideProps {
         })
         .catch((error) => {
           console.error("Error al obtener datos:", error);
-          setIsLoading(false);
+          setIsLoading(true);
         });
     }, []);
 

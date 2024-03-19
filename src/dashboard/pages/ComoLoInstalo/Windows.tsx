@@ -38,7 +38,7 @@ export const WindowsPage = () => {
                         <p className="text-md font-light mb-4">* Descargar la app de SpaceTV+ para Windows desde el botón naranja de aquí abajo.</p>
                         <p className="text-md font-light mb-6">Una vez tenemos el archivo descargado simplemente seguimos los pasos del video.</p>
                         <div className="flex flex-row items-center justify-center">
-                            <a href="http://158.69.225.52/apps/SpaceTV+(1.2.1).exe" target="_blank"><Button className='bg-orange-500 hover:bg-orange-800 text-white rounded-full px-8 py-6'>DESCARGAR SPACETV+</Button></a>
+                            <a href="https://www.spacetv.com.mx/SpaceTV+(1.2.1).exe"><Button className='bg-orange-500 hover:bg-orange-800 text-white rounded-full px-8 py-6'>DESCARGAR SPACETV+</Button></a>
                         </div>
                     </div>
                 </div>
