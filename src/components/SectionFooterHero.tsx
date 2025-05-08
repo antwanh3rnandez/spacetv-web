@@ -20,9 +20,9 @@ export function SectionFooterHero() {
 
         axios.get(apiUrl)
         .then((response) => {
-            setCountChannels(response.data.data.channels);
-            setCountMovies(response.data.data.movies);
-            setCountSeries(response.data.data.episodes);
+            setCountChannels(response.data.channels);
+            setCountMovies(response.data.movies);
+            setCountSeries(response.data.episodes);
             
         })
         .catch((error) => {

@@ -28,8 +28,8 @@ export const CanalesPage = () => {
 
     axios.get(apiUrl)
       .then((response) => {
-        setData(response.data.data.categories); 
-        setCount(response.data.data.allCount);
+        setData(response.data.categories); 
+        setCount(response.data.allCount);
       })
       .catch((error) => {
         console.error("Error al obtener datos:", error);

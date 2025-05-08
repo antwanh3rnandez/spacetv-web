@@ -11,7 +11,7 @@ export const DataTableExample = ({ type, categoria }: { type:string, categoria: 
 
     axios.get(apiUrl)
       .then((response) => {
-        setData(response.data.data.results); 
+        setData(response.data.results); 
       })
       .catch((error) => {
         console.error("Error al obtener datos:", error);
