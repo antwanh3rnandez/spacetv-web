@@ -7,7 +7,7 @@ export const DataTableExample = ({ type, categoria }: { type:string, categoria: 
   const [data, setData] = useState<Item[]>([]);
 
   useEffect(() => {
-    const apiUrl = `${import.meta.env.VITE_BASE_API_URL}${type}/${categoria}/`;
+    const apiUrl = `${import.meta.env.VITE_BASE_API_URL}${type}/${categoria}`;
 
     axios.get(apiUrl)
       .then((response) => {
@@ -20,7 +20,7 @@ export const DataTableExample = ({ type, categoria }: { type:string, categoria: 
 
   let columnsToUse; 
 
-  if (type === 'peliculas') {
+  if (type === 'movie') {
     columnsToUse = columnsMovies; 
   } else if (type === 'series') {
     columnsToUse = columnsSeries; 

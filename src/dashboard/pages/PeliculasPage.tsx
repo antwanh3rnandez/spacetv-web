@@ -80,7 +80,7 @@ export const PeliculasPage = () => {
                           value={categoria.id}
                           key={index}
                         >
-                          <DataTableExample type="peliculas" categoria={categoria.id}/>
+                          <DataTableExample type="movie" categoria={categoria.id}/>
                         </TabsContent>
                       ))
                     }

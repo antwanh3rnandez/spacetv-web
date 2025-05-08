@@ -53,7 +53,7 @@ export const AndroidPage = () => {
                                 <h4 className="font-semibold">PASO 2</h4>
                                 <p className="font-light p-4">Una vez realizado el paso anterior para que nos permita instalar el app. Ingresamos a su navegador y escribimos el siguiente URL:</p>
                                 <p className="font-light">
-                                    <a href="https://www.spacetv.com.mx/SpaceTV+(3.0).apk" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v3.0).apk</a>
+                                    <a href="https://www.spacetv.com.mx/SpaceTV+(3.1.1).apk" className="text-blueprimary">https://www.spacetv.com.mx/SpaceTV+(v3.1.1).apk</a>
                                 </p>
                                 <p className="font-light p-4 italic">Se comenzará la descarga.</p>
                             </div>
@@ -114,7 +114,7 @@ export const AndroidPage = () => {
                                 <h4 className="font-semibold">PASO 3</h4>
                                 <p className="font-light p-4">Descarga la app «Downloader» desde su tienda de aplicaciones lo abrimos y aceptamos los permisos.</p>
                                 <p className="font-light p-4">Una vez realizado el paso anterior, ingresamos en el campo de búsqueda y escribimos el el siguiente código: </p>
-                                <p className="font-light text-blueprimary text-2xl">172842
+                                <p className="font-light text-blueprimary text-2xl">1599500 o 1589714
                                 </p>
                                 <p className="font-light p-4 italic">Se comenzará la descarga.</p>
                             </div>
@@ -162,7 +162,7 @@ export const AndroidPage = () => {
                             <div className="py-4 lg:mt-0 text-center lg:text-center">
                                 <h4 className="font-semibold">PASO 2</h4>
                                 <p className="font-light p-4">Una vez realizado el paso anterior, en el campo de «File URL» escribimos cualquiera de los siguientes códigos:</p>
-                                <p className="font-light text-blueprimary text-2xl">172842
+                                <p className="font-light text-blueprimary text-2xl">1599500 o 1589714
                                 </p>
                                 <p className="font-light p-4 italic">Presionamos en «Go» y comenzará la descarga.</p>
                             </div>

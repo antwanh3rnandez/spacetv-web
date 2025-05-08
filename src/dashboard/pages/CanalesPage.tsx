@@ -77,7 +77,7 @@ export const CanalesPage = () => {
                           value={categoria.id}
                           key={index}
                         >
-                          <DataTableExample type="canales" categoria={categoria.id}/>
+                          <DataTableExample type="live" categoria={categoria.id}/>
                         </TabsContent>
                       ))
                     }
