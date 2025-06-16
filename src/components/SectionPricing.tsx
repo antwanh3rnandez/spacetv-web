@@ -64,7 +64,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -90,7 +90,8 @@ export function SectionPricing() {
                     <div className="flex items-center space-x-4 lg:space-x-6">
                       <a
                         target="_blank"
-                        href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=159296684-6726849e-3c84-4556-96a2-2c10eae76a9a"
+                        href="https://pago.clip.mx/ca224923-5d9f-4dd5-bb6b-f4209a25dce2"
+                        rel="noreferrer"
                       >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
@@ -98,8 +99,9 @@ export function SectionPricing() {
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F2NJZNSLPM2JL"
+                        href="https://www.paypal.com/paypalme/spehdz/11USD"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;
@@ -148,7 +150,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -174,7 +176,8 @@ export function SectionPricing() {
                     <div className="flex items-center space-x-4 lg:space-x-6">
                       <a
                         target="_blank"
-                        href="https://www.mercadopago.com.mx/checkout/v1/redirect?preference-id=159296684-912ba9b4-0618-4ee2-963b-e102520df4d4"
+                        href="https://pago.clip.mx/243461cd-6b8e-4ddd-beb0-747a39bf5806"
+                        rel="noreferrer"
                       >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
@@ -182,8 +185,9 @@ export function SectionPricing() {
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W28WB83MX8CYA"
+                        href="https://www.paypal.com/paypalme/spehdz/55USD"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;
@@ -232,7 +236,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -258,7 +262,8 @@ export function SectionPricing() {
                     <div className="flex items-center space-x-4 lg:space-x-6">
                       <a
                         target="_blank"
-                        href="https://www.mercadopago.com.mx/checkout/v1/redirect?preference-id=159296684-01e5f6be-5ea6-4834-812c-4cb7f8c9ee16"
+                        href="https://pago.clip.mx/93645e0a-8e7e-4d13-8c98-6f8e87786880"
+                        rel="noreferrer"
                       >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
@@ -266,8 +271,9 @@ export function SectionPricing() {
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VGZU46RDPGDDS"
+                        href="https://www.paypal.com/paypalme/spehdz/100USD"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;
@@ -316,7 +322,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -340,15 +346,20 @@ export function SectionPricing() {
                   </div>
                   <div className="mt-6 flex items-center justify-center">
                     <div className="flex items-center space-x-4 lg:space-x-6">
-                      <a target="_blank" href="https://mpago.la/2QfqUeW">
+                      <a 
+                        href="https://pago.clip.mx/d1b8db7c-8769-48fe-82f2-996e12ea6525"
+                        target="_blank" 
+                        rel="noreferrer"
+                      >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
                           <div>Comprar</div>
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PD7MGAZUWBE8Q"
                         target="_blank"
+                        href="https://www.paypal.com/paypalme/spehdz/22USD"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;
@@ -397,7 +408,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -421,15 +432,20 @@ export function SectionPricing() {
                   </div>
                   <div className="mt-6 flex items-center justify-center">
                     <div className="flex items-center space-x-4 lg:space-x-6">
-                      <a target="_blank" href="https://mpago.la/2Xig99A">
+                      <a 
+                        href="https://pago.clip.mx/7f6bfdd0-2f93-4bbe-bf3a-ba9a979f7be3"
+                        target="_blank" 
+                        rel="noreferrer"
+                      >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
                           <div>Comprar</div>
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=STE8ZZ6FL4XMU"
+                        href="https://www.paypal.com/paypalme/spehdz/110USD"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;
@@ -478,7 +494,7 @@ export function SectionPricing() {
                       <div className="text-center">
                         <h1 className="text-lg font-semibold">
                           <em>
-                            MercadoPago
+                            Clip
                             <br />
                             (MXN)
                           </em>
@@ -502,15 +518,20 @@ export function SectionPricing() {
                   </div>
                   <div className="mt-6 flex items-center justify-center">
                     <div className="flex items-center space-x-4 lg:space-x-6">
-                      <a target="_blank" href="https://mpago.la/1Pm9Efj">
+                      <a 
+                        href="https://pago.clip.mx/a9c53aca-0db7-437f-970e-f21e8ea08ea1"
+                        target="_blank" 
+                        rel="noreferrer"
+                      >
                         <Button className="bg-green-500">
                           <IconCreditCard /> &nbsp;
                           <div>Comprar</div>
                         </Button>
                       </a>
                       <a
-                        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAWA9M66EW2ZE"
+                        href="https://www.paypal.com/paypalme/spehdz/195USD"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <Button className="bg-blueprimary">
                           <IconBrandPaypal /> &nbsp;

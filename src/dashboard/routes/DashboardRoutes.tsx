@@ -14,6 +14,7 @@ import { MacPage } from "../pages/ComoLoInstalo/Mac";
 import { IPhonePage } from "../pages/ComoLoInstalo/iOS";
 import { SsiptvPage } from "../pages/ComoLoInstalo/Ssiptv";
 import { SmartIptvPage } from "../pages/ComoLoInstalo/SmartIptv";
+import { PoliticaPrivacidadPage } from "../pages/PoliticaPrivacidadPage";
 
 export const DashboardRoutes = () => {
   return (
@@ -32,6 +33,7 @@ export const DashboardRoutes = () => {
         <Route path="/instalar-ios" element={<IPhonePage/>} />
         <Route path="/instalar-smarttv-ssiptv" element={<SsiptvPage/>} />
         <Route path="/instalar-smarttv-smartiptv" element={<SmartIptvPage/>} />
+        <Route path="/politica-privacidad" element={<PoliticaPrivacidadPage/>} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </DashboardLayout>
